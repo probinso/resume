@@ -20,7 +20,7 @@ tree * new_tree(int value)
 tree * insert(int value, tree * current)
 {
   if (current == NULL) return new_tree(value);
-  if (value < current->value)
+  if (value <= current->value)
     current->left  = insert(value, current->left);
   else
     current->right = insert(value, current->right);
