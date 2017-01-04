@@ -22,7 +22,7 @@
 
 \usepackage{titlesec}
 \titlespacing*{\subsubsection}{0pt}{*2}{*0}
-\titlespacing*{\subsection}{0pt}{0pt}{*0}
+\titlespacing*{\subsection}{0pt}{10pt}{*0}
 \usepackage{fontenc}
 \usepackage{courier}
 \usepackage{hyperref}
@@ -54,8 +54,17 @@
    \setlength{\parskip}{0pt}
    \setlength{\parsep}{0pt}}{\end{list}\end{multicols}\normalsize}
 
-\newenvironment{*mylist}[2]{
+\newenvironment{**mylist}[2]{
   \subsubsection*{#1\hfill\small#2}
+  \small
+  \begin{list}{}{}
+   \setlength{\topsep}{0pt}
+   \setlength{\itemsep}{1pt}
+   \setlength{\parskip}{0pt}
+   \setlength{\parsep}{0pt}}{\end{list}\normalsize}
+
+\newenvironment{*mylist}[2]{
+  \subsection*{#1\hfill#2}
   \small
   \begin{list}{}{}
    \setlength{\topsep}{0pt}
@@ -132,11 +141,11 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \end{comment}
 
 \begin{comment}
-\begin{*mylist}{Software :}{}
+\begin{**mylist}{Software :}{}
 \item Git, Mercurial, SVN
 \item FreeBSD, Various Linux Distributions
 \item Windows XP,7
-\end{*mylist}
+\end{**mylist}
 \end{comment}
 
 \newcommand{\BSec}[1]{
@@ -147,7 +156,7 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \TabPositions{2in} % convenient location
 \def\tabb{\tab- }  % so easy reversals can be performed
 
-\begin{*mylist}{Independent \tabb Contractor/Consultant}{}
+\begin{**mylist}{Independent \tabb Contractor/Consultant}{}
 \item \hspace{-1em}
   \href{http://cwenergyusa.com/star-friendly/}{\bf{C\&W Energy}}\hfill{\bf{Nov. 2015 - present}}
 \item Authored educational material on light pollution's effect on economy, biology, and technology
@@ -166,9 +175,9 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \item Setup infrastructure in AWS to enable secure sustainable workflow for remote company
 \item Provided hands on training in Python and R to industry professionals
 \item \LU{Python, R, AWS, PostgreSQL, Perl, C++}
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{\href{http://galois.com}{Galois Inc.} \tabb Research Engineer}{April 2014 - Dec 2015}
+\begin{**mylist}{\href{http://galois.com}{Galois Inc.} \tabb Research Engineer}{April 2014 - Dec 2015}
 \item Contributed to
   \href{http://www.darpa.mil/program/probabilistic-programming-for-advancing-machine-Learning}{PPAML},
   \href{https://www.usvotefoundation.org/sites/default/files/E2EVIV_nontechnical_audience_report.pdf}{Overseas Voting Foundation},
@@ -181,9 +190,9 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
   \href{https://www.cra.com/commercial-solutions/probabilistic-modeling-services.asp}{Figaro},
   \href{http://chimple.probprog.org/}{Chimpy},
   Docker}
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{\href{https://www.emc.com/en-us/storage/isilon/index.htm}{EMC\(^2\) Isilon Storage} \tabb Software Development Engineer}{Dec. 2012 - July 2013}
+\begin{**mylist}{\href{https://www.emc.com/en-us/storage/isilon/index.htm}{EMC\(^2\) Isilon Storage} \tabb Software Development Engineer}{Dec. 2012 - July 2013}
 \item Brought to schedule a lagging anchor release feature in approximately 5 months
 %\item Worked on the design, development, and QA processes for major release feature
 \item Designed and developed password manager to support Data At Rest Encryption %supporting self encrypting drives in FreeBSD
@@ -191,9 +200,9 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 %\item Used FreeBSD's patches system to Port software to FreeBSD
 %\item Used OpenSSL to prototype password managment options.
 \item \LU{C, C++, Python, SQLite}
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{\csd \tabb Mentors Program Director/Mentor}{
+\begin{**mylist}{\csd \tabb Mentors Program Director/Mentor}{
     Sept. 2009
     - March 2012}
 %\item Managed and Trained student mentors in the computer science program
@@ -203,56 +212,57 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \item Ran student/faculty meetings to project future program responsibilities
 \item Wrote comprehensive quarterly reports, and tools for automatic report generation
 \item \LU{Ada, C++, Scheme, R}
-\end{*mylist}
+\end{**mylist}
 
 \begin{comment}
-\begin{*mylist}{\csd \tabb Student Mentor}{Sept. 2009 - June 2011}
+\begin{**mylist}{\csd \tabb Student Mentor}{Sept. 2009 - June 2011}
 \item Aided in identifying and debugging student's code
 \item Tutored groups and individual students in computer science
 %% \item Held lectures on tech topics
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{\csd \tabb Teaching Assistant}{Mar. 2011 - Dec. 2011}
+\begin{**mylist}{\csd \tabb Teaching Assistant}{Mar. 2011 - Dec. 2011}
 \item Instructed weekly lab sessions
 %\item Explained programming concepts to the technologically impaired
 \item Evaluated student's progress throughout the academic quarter
 %%\item \LU{HTML, Javascript, Excel}
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{Merilyn Moss Design \tabb Consultant/Contractor}{Jun. 2009 - Aug. 2010}
+\begin{**mylist}{Merilyn Moss Design \tabb Consultant/Contractor}{Jun. 2009 - Aug. 2010}
 \item Debugged and standardized websites to browsers
 \item Advised on technology readiness levels
 \item Produced working products under tight time constraints
 %\item Defined and Modularized Project Scope
 \item \LU{PHP, HTML, CSS, Javascript}
-\end{*mylist}
+\end{**mylist}
 
-\begin{*mylist}{Monster Mailbox \tabb Summer Intern}{Jun. 2009 - Aug. 2009}
+\begin{**mylist}{Monster Mailbox \tabb Summer Intern}{Jun. 2009 - Aug. 2009}
 \item Performed basic server/website administration services on Linux
 \item Built, designed, and populated websites with and without Content Management Systems
 \item \LU{PHP, HTML, CSS, Javascript, Joomla}
-\end{*mylist}
+\end{**mylist}
 \end{comment}
 
 \BSec{Neato Projects}
 \small
-\vspace{-.08in}\begin{*mylist}{}{}
+\vspace{-.08in}\begin{**mylist}{}{}
 \item Sensor Systems and Light Pollution Course\hfill\LUx{sklearn, scipy, PonyORM, Python}
+\item Dating a Band - Lyrics Release Date Classifier\hfill\LUx{javascript, Python}
 \item Splinqr - Shamir Secret QR Sharing \hfill\LUx{Python}
 \item Probabilistic-Program Profiler and Evaluator Harness\hfill\LUx{SLURM, PonyORM, Python}
 \item Probabilistic WiFi Geolocation\hfill\LUx{Figaro, Scala, Javascript}
-\item Cryptographic Distributed Virtual System Vectors \hfill\LUx{\LaTeX, Haskell}
+%\item Cryptographic Distributed Virtual System Vectors \hfill\LUx{\LaTeX, Haskell}
 \item Distributed Fully Homomorphic Encryption System \hfill\LUx{Hadoop, Python}
 \item Concurrent Elliptic Curve Cryptography Module\hfill\LUx{Erlang, Sagemath}
 \item Analysis of Subordinating and Coordinating Conjunctions\hfill\LUx{R, Perl}
 \item AdaRailz Concurrent Model Train Control System\hfill\LUx{Ada}
-\item TwixT AI Agent and UI\hfill\LUx{Java}
+%\item TwixT AI Agent and UI\hfill\LUx{Java}
 %\item Fractal Art Generator \& Image Manipulation Program \hfill\LUx{C\#}
 %\item Text-Based Adventure Game\hfill\LUx{C++}
 %\item Unix Shell \hfill\LUx{C}
 \item Liars Dice Game Server \hfill\LUx{C}
 %\item Petrographic Mineral Identification Database Design Documents
-\end{*mylist}
+\end{**mylist}
 
 \begin{comment}
 \hspace{-.08in}\begin{tabular}{lrl}
@@ -276,17 +286,35 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \end{comment}
 \normalsize
 
-\pagebreak\BSec{Education}
+\pagebreak
+\BSec{Education}
 
-\begin{mylist}{Post-Graduation Courses :}{2}
+\begin{*mylist}{Oregon Health Science University}{CSLU}
+\item Non-Matriculated (Masters)
+\item 2016 - present
+\end{*mylist}
+
+\begin{mylist}{Courses :}{2}
+\item Analysis of Sequences
+\item Univariate Statistical Analysis
+\item Statistical Methods
+\item Digital Signal Processing
+\end{mylist}
+
+\begin{comment}
+\subsection*{Continued Education}
+%Coursera, Continued Education, Summer Programs}
+
+\begin{mylist}{Courses :}{2}
 \item Agile Machine Learning
-\item Probabilistic Programming
+\item Probabilistic Programming Summer Program
 \item Functional Programming in Scala
 \item Applied Cryptography
 \end{mylist}
+\end{comment}
 
-\begin{*mylist}{University}{}
-\item BS Computer Science, Western Washington University (WWU)
+\begin{*mylist}{Western Washington University}{Computer Science}
+\item Computer Science BS
 \item Mathematics Minor
 \item Sept. 2007 - June 2012
 \end{*mylist}
@@ -327,17 +355,17 @@ See my project details at \url{http://probinso.dyn-o-saur.com}.
 \item Abstract Algebra
 \end{mylist}
 
-\begin{*mylist}{Honors and Related Activities}{}
-\item WWU Scholar's Week Poster Competition (Two Submissions) \hfill- May{ }{ } 2012
-\item Kryptos Cryptanalysis Challenge \hfill- April 2012
+\begin{**mylist}{Honors and Related Activities}{}
+%\item WWU Scholar's Week Poster Competition (Two Submissions) \hfill- May{ }{ } 2012
+%\item Kryptos Cryptanalysis Challenge \hfill- April 2012
 \item Pacific Rim Regional Collegiate Cyber Defense Competition  (Fourth Place)\hfill- March 2012
 \item Comap Mathematical Modeling Competition (Meritorious Winner) - Top 10\%\hfill- Feb. 2012
-\item International Collegiate Programming Contest \hfill- Nov. 2011
-\item Comap Mathematical Modeling Competition (Honorable Mention) - Top 30\%\hfill- Feb. 2011
-\item William Lowell Putnam Competition\hfill- Dec. 2010
-\item WWU ACM Programming Competition (First Place)\hfill- Jan. 2010
-\item WWU Computer Science Distinguished Scholar Award \hfill- Sep. 2007
-\end{*mylist}
+%\item International Collegiate Programming Contest \hfill- Nov. 2011
+\item Comap Mathematical Modeling Competition (Honorable Mention) { }- Top 30\%\hfill- Feb. 2011
+%\item William Lowell Putnam Competition\hfill- Dec. 2010
+%\item WWU ACM Programming Competition (First Place)\hfill- Jan. 2010
+%\item WWU Computer Science Distinguished Scholar Award \hfill- Sep. 2007
+\end{**mylist}
 
 \begin{comment}
 \begin{*mylist}{Volunteer Work}{}
