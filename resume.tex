@@ -72,7 +72,7 @@
    \setlength{\parskip}{0pt}
    \setlength{\parsep}{0pt}}{\end{list}\normalsize}
 
-\newcommand{\LU}[1]{\hspace{-1em}{\bf Languages Used : #1}}
+\newcommand{\LU}[1]{\hspace{-1em}{\bf Technologies : #1}}
 \newcommand{\LUx}[1]{{\bf\em #1}}
 
 \def\csd{Computer Science Dept. }
@@ -108,14 +108,14 @@
   gained me strong communication skills.
 }
 
-\begin{mylist}{Language Experience :}{4}
-\item[$\star$] Python
-\item Ada
-\item Julia
+\begin{mylist}{Persistant Experience :}{4}
+\item Python
+%\item Ada
+%\item Julia
 \item R
 %\item Scala, Figaro
 \item C, C++ %, C\#
-\item Perl
+%\item Perl
 %\item Erlang
 %\item Scheme
 %\item SageMath
@@ -124,6 +124,10 @@
 %\item ChimPy
 \item \LaTeX
 %\item Graphvis
+\item Linux
+\item Git
+\item TDD
+\item Ticketing Systems
 \end{mylist}
 
 \begin{comment}
@@ -142,14 +146,13 @@
 
 \BSec{Work Experience}
 
-\begin{**mylist}{NASA Jet Propulsion Lab \tabb Graduate Summer Research Intern}{June 2018 - Sept. 2018}
+\begin{**mylist}{NASA Jet Propulsion Lab \tabb Graduate Research Intern}{June 2018 - Sept. 2018}
 \item Developing automatic Subject Matter Expert identification against failure report system
 \item Implemented principled text normalization, tokenization, and model evaluation strategies
 %\item Readied project for adoption and technology transfer
 \item Open Source contributions to the gensim's natural language processing library
-\item \LU{Python, gensim, pandas, jupyter, pyLDAvis}
+\item \LU{Python, gensim, pandas, jupyter}
 \end{**mylist}
-
 
 \begin{**mylist}{OHSU Fair Neuroimaging Lab \tabb Research Support Engineer}{Oct. 2017 - June 2018}
 \item Contributed to workflows and analytics tools for studying Microbiome populations
@@ -157,7 +160,7 @@
 \item Developed processing pipeline and audit tools for reported data and FMRI images
 %\item Established project development guidelines, Git Czar, Lab Security Representative
 %\item Worked in teams under multiple institutional review boards
-\item \LU{Python, Bash, R, neo4j, ponyorm, stan}
+\item \LU{Python, Bash, R, neo4j, ponyorm, stan, GitLab}
 \end{**mylist}
 
 \begin{**mylist}{Contractor/Consultant}{}
@@ -165,8 +168,8 @@
   {\bf{RGB Optics} / }\href{http://cwenergyusa.com/star-friendly/}{\bf{C\&W Energy USA}}\hfill{\bf{Nov. 2015 - Present}}
 \item Provided live technology tutorials and consulting on optimization and image processing
 %\item Authored educational material in light pollution on economy, biology, and technology
-\item Light classification engine, custom photo image processing tools, and mathematical models
-\item Developed a cloud memoizing data pipeline for caching computationally expensive operations
+\item Developed low cost spectral profile analysis and custom photo image processing
+\item Developed a \href{https://github.com/probinso/color-pollution}{cloud memoizing data pipeline} for caching computationally expensive operations
 \item Provided hands on training to grow industry scientists in Python
 \item \hspace{-1em}
   {\bf{ComScore}}\hfill{\bf{June 2016 - Sept. 2016}}
@@ -178,7 +181,7 @@
   \href{http://www.melinae.com/}{\bf{Melinae}}\hfill{\bf{March 2016}}
 \item Setup infrastructure in AWS to enable secure sustainable remote-first workflow
 \item Provided hands on training in Python and R to industry professionals
-\item \LU{Python, R, AWS, PostgreSQL, Perl, C++}
+\item \LU{Python, R, AWS, PostgreSQL, Perl, C++, skimage, AWS, Jira, ZenHub}
 \end{**mylist}
 
 \begin{comment}
@@ -193,13 +196,13 @@
   \href{https://www.usvotefoundation.org/sites/default/files/E2EVIV_nontechnical_audience_report.pdf}{Overseas Voting Foundation},
   \href{http://www.darpa.mil/Our_Work/I2O/Programs/SafeWare.aspx}{Safeware},
   \href{https://rft.osrfoundation.org/index.html}{Robot Fast Track}
-\item Developed technologies and workflows to enable evaluator work for DARPA programs
+\item Developed \href{https://github.com/probinso/ppaml-eval-tools}{processing pipelines} and workflows to enable evaluator work for DARPA programs
 \item Produced biannual quantitative and qualitative reports on for DARPA and language developers
 \item Participated in programs sharing new technologies to research and industry professionals
-\item \LU{Python, Scala,
+\item \LU{Python, SLURM, Scala,
   \href{https://www.cra.com/commercial-solutions/probabilistic-modeling-services.asp}{Figaro},
   \href{http://chimple.probprog.org/}{Chimpy},
-  Docker}
+  Docker, Jira, Basecamp}
 \end{**mylist}
 
 \begin{**mylist}{\href{https://www.emc.com/en-us/storage/isilon/index.htm}{EMC\(^2\) Isilon Storage} \tabb Software Development Engineer}{Dec. 2012 - July 2013}
@@ -209,7 +212,7 @@
 \item Wrote unit tests using libcheck to attain > 80\% code coverage
 %\item Used FreeBSD's patches system to Port software to FreeBSD
 %\item Used OpenSSL to prototype password managment options.
-\item \LU{C, C++, Python, SQLite}
+\item \LU{C, C++, Python, SQLite, Subversion}
 \end{**mylist}
 
 \begin{**mylist}{\csd \tabb Mentors Program Director}{
@@ -221,7 +224,7 @@
 %\item Explained programming concepts to the technologically impaired
 %\item Ran student/faculty meetings to project future program responsibilities
 \item Wrote comprehensive quarterly reports, and tools for automatic report generation
-\item \LU{Ada, C++, Scheme, R}
+\item \LU{Ada, C++, Scheme, R, mercurial}
 \end{**mylist}
 
 \begin{comment}
@@ -270,23 +273,23 @@
 \small
 \vspace{-.08in}\begin{**mylist}{}{}
 \item \href{https://github.com/probinso/Whales}{Whale vocals localization and analysis}\hfill\LUx{jupyter, matplotlib, scipy, Python}
-\item \href{https://github.com/probinso/color-pollution}{Sensor Systems and Light Pollution Analysis}\hfill\LUx{aws, sklearn, skimage, PonyORM, Python}
-\item \href{https://github.com/probinso/morphological-watersheds}{Morphological Watershedding Algorithms}\hfill\LUx{numpy, ndimage, Python}
+\item \href{https://github.com/probinso/introduction-git}{Workshop collaborative introduction to GitHub} and \href{https://github.com/probinso/ABC}{slides}\hfill\LUx{markdown, bash, githhub.api}
+\item \href{https://github.com/probinso/morphological-watersheds}{Morphological Watershedding Algorithms}\hfill\LUx{pyspark, numpy, ndimage, Python}
 \item \href{https://github.com/probinso/RVM.jl/blob/master/src/RVM.jl}{Relevance Vector Machine} \hfill\LUx{Julia}
-\item \href{https://github.com/probinso/IR-cluster-rank-demo}{Information Retrieval Cluster/Rank Demo Harness}\hfill\LUx{flask, sklearn, Python}
+\item \href{https://github.com/probinso/IR-cluster-rank-demo}{Information Retrieval Cluster/Rank Demo Harness}\hfill\LUx{flask, numpy, sklearn, Python}
 %\item Sad Clown Research Group\hfill\LUx{gh-pages, pelican, blog}
 %\item Dating a Band - Lyrics Release Date Classifier\hfill\LUx{javascript, Python}
 \item \href{https://github.com/probinso/stats-methods-project}{Gene Data Breast Cancer Drug Predictor}\hfill\LUx{R, caret}
 \item N-Body Simulator\hfill\LUx{SIUnits, Julia}
 %\item Splinqr - Shamir Secret QR Sharing \hfill\LUx{Python}
-\item \href{https://github.com/probinso/ppaml-eval-tools}{Probabilistic-Program Profiler and Evaluator Harness}\hfill\LUx{SLURM, PonyORM, Python}
+%\item \href{https://github.com/probinso/ppaml-eval-tools}{Probabilistic-Program Profiler and Evaluator Harness}\hfill\LUx{SLURM, PonyORM, Python}
 %\item Probabilistic WiFi Geolocation\hfill\LUx{Figaro, Scala, Javascript}
 %\item Cryptographic Distributed Virtual System Vectors \hfill\LUx{\LaTeX, Haskell}
 \item Distributed Fully Homomorphic Encryption System \hfill\LUx{Hadoop, Python}
 \item Concurrent Elliptic Curve Cryptography Module\hfill\LUx{Sagemath, Erlang}
 \item Multilingual Analysis of Subordinating and Coordinating Conjunctions\hfill\LUx{R, Perl}
 \item AdaRailz Concurrent Model Train Control System\hfill\LUx{Ada}
-%\item TwixT AI Agent and UI\hfill\LUx{Java}
+\item TwixT AI Agent and UI\hfill\LUx{Java}
 \item Fractal Art Generator \& Image Manipulation Program \hfill\LUx{C\#}
 %\item Text-Based Adventure Game\hfill\LUx{C++}
 \item Unix Shell \hfill\LUx{C}
