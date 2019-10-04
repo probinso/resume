@@ -53,4 +53,3 @@ int main(int argc, char ** argv)
     printf("%i\n", curr->value);
   return 0;
 }
-
