@@ -8,7 +8,6 @@
   vmargin=0.5in,
   twoside=false,
   nohead,nofoot,
-%  paperheight=(\paperheight + 3.5in)
 ]{geometry}
 \usepackage[english]{babel}
 \usepackage{censor}
@@ -61,7 +60,7 @@
    \setlength{\parsep}{0pt}}{\end{list}\end{multicols}\normalsize}
 
 \newenvironment{**mylist}[2]{
-  \subsubsection*{#1\hfill\small#2}
+  \subsubsection*{#1\hfill#2}
   \small
   \begin{list}{}{}
     \setlength{\topsep}{0pt}
@@ -94,7 +93,7 @@
 \pagestyle{empty}% remove page number
 \begin{multicols}{3}
  {\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
-\censor{Portland, OR 97214}\\ \columnbreak UTC-7\\
+\censor{Portland, OR}\\ \columnbreak UTC-7\\
  \censor{probinso+res}@protonmail.com\\ %pmoss.robinson+res@gmail.com\\
  \censor{206.377.9747}
 \end{multicols}
@@ -104,11 +103,13 @@
 %\vspace{1em}
 %\Hspace{-.5in}{\noindent\small\bf\url{http://probinso.dyn-o-saur.com}\hfill Last Updated : \today\\}
 
+\begin{comment}
 \subsection*{Personal Statement}
  {\blocking
    I am an adaptable engineer with completed products/work in systems, machine learning, and natural sciences.
    I enjoy to develop practical analysis and solutions for real problems.
 }
+\end{comment}
 
 \begin{mylist}{Skills/Experience :}{4}
 %\item \href{https://github.com/probinso/Intro-to-Python}{Python}
@@ -126,8 +127,8 @@
 \item Research MVPs
 \item Data Sciences
 \item Linux Systems
-\item Teamwork
-\item Training/Mentoring
+\item Remote Work
+\item Education/Mentoring
 \item Communication
 \item Ticketing Systems
 \item \href{https://en.wikipedia.org/wiki/Roundabout_(play)}{Merry-go-rounds}
@@ -144,20 +145,20 @@
 \newcommand{\BSec}[1]{
 \vspace{1em}
 \noindent{\hspace{\bsp} \LARGE{\bf #1}{ }\hrulefill}}
-\TabPositions{2.4in} % convenient location
+\TabPositions{2.3in} % convenient location
 \def\tabb{\tab- }  % so easy reversals can be performed
 
-\BSec{Work Experience}
+\BSec{}%Work Experience
+
 \begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Staff Software Engineer}{March 2019 - present}
 \item Contributed as full stack developer on a small team, in both remote and onsite environments
-\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective} App}, a cross platform tool to manage citizen-science projects
+\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective} App}, a cross platform phone app for citizen-science projects
 \item Maintained and contributed to user tools for individual \censor{whale} identification and tracking
-%\item <next thing here, possibly funding?>
+\item %<Next thing here, possibly funding?>
 \item \LU{Native/TypeScript, Angular, Android, iOS, PostgreSQL, Java, Spring, firebase}
 \end{**mylist}
 
-
-\begin{**mylist}{Graduate Research \censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{CSLU}/\href{http://aco-ssds.soest.hawaii.edu/}{ACO}}\tabb Deep Learning in Marine Acoustics}{Sept 2017 - present}
+\begin{**mylist}{Graduate Research \censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{CSLU}/\href{http://aco-ssds.soest.hawaii.edu/}{ACO}}\tabb Marine Acoustics Engineering}{Sept 2017 - Dec 2019}
 \item Designed, developed, and managed research work in a remote environment without oversight
 \item Researched novel techniques to study/index bioacoustic events from a 10 year audio track
   %\item Measured effects of adaptive spectral subtraction, for audio denoising, on models' accuracy
@@ -173,25 +174,26 @@
 \item \LU{\censor{ACOio}, Keras, tensorflow, PyTorch, scipy.signal, Jupyter, flask, Angular}
 \end{**mylist}
 
-\begin{comment}
+%\begin{comment}
 \begin{**mylist}{\href{www.thinkful.com}{Thinkful} \PT \tabb Data Science Technical Expert}{Jan 2019 - March 2019}
-\item Advised career transitioners in mastery of professional and data science topics
 \item Provided safe environment for training and instruction in a remote-first setting
+\item Advised career transitioners in mastery of professional and data science topics
 \end{**mylist}
-\end{comment}
+%\end{comment}
 
 \begin{**mylist}{\censor{NASA Jet Propulsion Lab} \tabb Graduate Data Science Intern}{June 2018 - Sept 2018}
-\item Developed NLP \href{https://github.com/probinso/expert-modeling-system}{Expert Modeling/Recommender System}, automating expensive mission-critical tasks
+\item Developed NLP \href{https://github.com/probinso/expert-modeling-system}{Expertise Recommender System}, automating expensive mission-critical tasks
 \item Fully specified programmatic solutions from use-case meetings with top \censor{NASA/JPL} employees
 %\item Prototyped matching experts against mission critical anomalies, automating expensive tasks
 %\item Implemented stable/principled text normalization, tokenization, and model evaluation
-\item Open Source contributions to the \censor{gensim natural language processing} library
+%\item Open Source contributions to the \censor{gensim natural language processing} library
 \item \LU{Python, nltk, gensim, pyLDAvis, pandas, Jupyter, \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{Author-Topic-Model}, \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{LDA}}
 \end{**mylist}
+
 \begin{**mylist}{\href{https://www.ohsu.edu/school-of-medicine/developmental-cognition-and-neuroimaging-lab}{\censor{OHSU DCAN Neuroimaging Lab}} \tabb Research Assistant}{Oct 2017 - June 2018}
 \item Contributed to microbiome population analytics tools to study female reproductive system
 %\item Supported research on developing brains, including \href{https://abcdstudy.org/}{ABCD}, and several ADHD/ASD studies
-\item Developed processing pipeline and \href{https://gitlab.com/Fair_lab/HCPVaTT}{audit tools} for reported and FMRI data, on AHDH/ASD studies
+\item Developed processing pipeline and \href{https://gitlab.com/Fair_lab/HCPVaTT}{audit tools} for reported and fMRI data, on AHDH/ASD studies
 \item Acted as \href{https://github.com/probinso/ABC}{Git}, OSS, and securities lead, developing trainings and enforcing best practices
   %\item Established project development guidelines, Git Czar, Lab Security Representative
   %\item Worked and managed data in teams under multiple institutional review boards
@@ -218,7 +220,9 @@
 \item Worked to support large, custom, memory mapped, data store for demographic analysis
 \item \LU{PostgreSQL, Perl, C++, Jira}
 \end{**mylist}
+\end{comment}
 
+\begin{comment}
 \begin{**mylist}{\href{http://www.melinae.com/}{\censor{Melinae}}}{March 2016}
 \item Setup infrastructure in AWS to enable secure \& sustainable remote-first workflow
 \item Provided hands on training in Python and R to industry professionals
@@ -342,33 +346,34 @@
 \end{comment}
 
 %\pagebreak
+
 \begin{comment}
 \BSec{Neato Projects}
 \small
 \vspace{-.08in}\begin{**mylist}{}{}
-%\item Variational Inference presentation, report, and implementations \hfill\LUx{breamer, \LaTeX, numpy}
+\item Variational Inference presentation, report, and implementations \hfill\LUx{breamer, \LaTeX, numpy}
 %\item Multiple Myeloma Clinical Trials, custom named-entity boosted topic model \hfill\LUx{numpy, Python}
 \item \href{https://github.com/probinso/expert-modeling-system/blob/master/decks/itds/pres.pdf}{Practical topic modeling, a detailed presentation for non-statisticians}\hfill\LUx{beamer, \LaTeX}
 \item \href{https://github.com/probinso/ABC}{Workshop collaborative introduction to GitHub} and \href{https://github.com/probinso/introduction-git}{slides}\hfill\LUx{markdown, bash, github.api}
 \item \href{https://github.com/probinso/morphological-watersheds}{Distributed Morphological Watersheding Algorithms}\hfill\LUx{pyspark, numpy, ndimage, Python}
-%\item \href{https://github.com/probinso/RVM.jl/blob/master/src/RVM.jl}{Relevance Vector Machine} \hfill\LUx{Julia}
+\item \href{https://github.com/probinso/RVM.jl/blob/master/src/RVM.jl}{Relevance Vector Machine} \hfill\LUx{Julia}
 \item \href{https://github.com/probinso/IR-cluster-rank-demo}{Information Retrieval Cluster/Rank Demo Harness}\hfill\LUx{flask, numpy, nltk, sklearn, Python}
 %\item Sad Clown Research Group\hfill\LUx{gh-pages, pelican, blog}
 %\item Dating a Band - Lyrics Release Date Classifier\hfill\LUx{javascript, Python}`
-%\item \href{https://github.com/probinso/stats-methods-project}{Gene Data Breast Cancer Drug Predictor}\hfill\LUx{R, caret}
-%\item N-Body Simulator\hfill\LUx{SIUnits, Julia}
+\item \href{https://github.com/probinso/stats-methods-project}{Gene Data Breast Cancer Drug Predictor}\hfill\LUx{R, caret}
+\item N-Body Simulator\hfill\LUx{SIUnits, Julia}
 %\item Splinqr - Shamir Secret QR Sharing \hfill\LUx{Python}
 %\item Probabilistic WiFi Geolocation\hfill\LUx{Figaro, Scala, Javascript}
 %\item Cryptographic Distributed Virtual System Vectors \hfill\LUx{\LaTeX, Haskell}
 \item Distributed Fully Homomorphic Encryption System \hfill\LUx{Hadoop, Sagemath}
 \item \href{https://github.com/probinso/ecc}{Concurrent Elliptic Curve Cryptography Module}\hfill\LUx{Sagemath, Erlang}
   %\item Multilingual Analysis of Subordinating and Coordinating Conjunctions\hfill\LUx{R, Perl}
-%\item \href{https://github.com/probinso/adarailz}{AdaRailz Concurrent Model Train Control System}\hfill\LUx{Ada}
-%\item TwixT AI Agent and UI\hfill\LUx{Java}
+\item \href{https://github.com/probinso/adarailz}{AdaRailz Concurrent Model Train Control System}\hfill\LUx{Ada}
+\item TwixT AI Agent and UI\hfill\LUx{Java}
 %\item Fractal Art Generator \hfill\LUx{C\#}
-%\item Image Manipulation Program \hfill\LUx{C\#}
+\item Image Manipulation Program \hfill\LUx{C\#}
 %\item Text-Based Adventure Game\hfill\LUx{C++}
-%\item Unix Shell \hfill\LUx{C}
+\item Unix Shell \hfill\LUx{C}
 %\item \href{https://github.com/probinso/liarsdice}{Liars Dice Game Server} \hfill\LUx{C}
 %\item Petrographic Mineral Identification Database Design Documents
 \end{**mylist}
@@ -381,7 +386,7 @@
 
   \begin{*mylist}{\censor{Oregon Health Science} University}{Computer Science \& Machine Learning}
     \item Masters of Science
-    \item 2016 - present%\hfill {\em Expected Graduation: Sept 2019}
+    \item 2016 - 2019%present%\hfill {\em Expected Graduation: Sept 2019}
 \end{*mylist}\columnbreak
 
   \raggedright
