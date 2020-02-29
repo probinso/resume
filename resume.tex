@@ -30,7 +30,7 @@
 \usepackage{nohyperref}
 %\usepackage{hyperref}
 %\StopCensoring
-\usepackage{url}
+%\usepackage{url}
 
 \renewcommand*\familydefault{\ttdefault}
 
@@ -94,11 +94,11 @@
 \begin{multicols}{3}
  {\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
 \censor{Portland, OR}\\ \columnbreak UTC-7\\
- \censor{probinso+res}@protonmail.com\\ %pmoss.robinson+res@gmail.com\\
+ \censor{probinso+res}@protonmail.com\\
  \censor{206.377.9747}
 \end{multicols}
 \hspace{-.5in}{\noindent\small\bf\href{https://github.com/probinso}{https://github.com/\censor{probinso}}}
-%\hspace{-.5in}{\noindent\small\bf\url{http://probinso.dyn-o-saur.com}}
+
 
 %\vspace{1em}
 %\Hspace{-.5in}{\noindent\small\bf\url{http://probinso.dyn-o-saur.com}\hfill Last Updated : \today\\}
@@ -112,18 +112,6 @@
 \end{comment}
 
 \begin{mylist}{Skills/Experience :}{4}
-%\item \href{https://github.com/probinso/Intro-to-Python}{Python}
-%\item TDD
-%\item Perl
-%\item Erlang
-%\item Scheme
-%\item SageMath
-%\item Java
-%\item Venture
-%\item ChimPy
-%\item TDD
-%\item \LaTeX, Graphvis
-%\item \href{https://github.com/probinso/ABC}{Git}
 \item Research MVPs
 \item ML/Data Sciences
 \item Linux Systems
@@ -133,14 +121,6 @@
 \item Ticketing Systems
 \item Rubber Ducking
 \end{mylist}
-
-\begin{comment}
-\begin{**mylist}{Software :}{}
-\item Git, Mercurial, SVN
-\item FreeBSD, Various Linux Distributions
-\item Windows XP, 7, 10
-\end{**mylist}
-\end{comment}
 
 \newcommand{\BSec}[1]{
 %\vspace{1em}
@@ -152,9 +132,10 @@
 
 \begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb R\&T Machine Learning Engineer}{March 2020 - present}
 \item Individual contributor on machine learning \& security research team, in remote environment
-%\item %<Next thing here>
-%\item %<Next thing here>
-%\item \LU{Python, PyTorch, C, ...}
+%\item
+%\item
+\item \LU{Python, PyTorch, C, ...}
+
 \end{**mylist}
 
 \begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Staff Software Engineer}{March 2019 - March 2020}
@@ -167,17 +148,18 @@
 
 \begin{**mylist}{Graduate Research \censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{CSLU}/\href{http://aco-ssds.soest.hawaii.edu/}{ACO}}\tabb Marine Acoustics Engineering}{Sept 2017 - Dec 2019}
 \item Designed, developed, and managed research work in a remote environment without oversight
-\item Researched novel techniques to study/index bioacoustic events from a 10 year audio track
-\item Measured effects of adaptive spectral subtraction, for audio denoising, on models' accuracy
+  %\item Researched novel techniques to study/index bioacoustic events from a 10 year audio track
+  %\item Measured effects of adaptive spectral subtraction, for audio denoising, on models' accuracy
   %\item Developed deep noise-reduction machine to clean indexed audio, for better feature extraction
   %\item Developed deep unsupervised feature extractor for anomalous audio event clustering
 \item Developed %\censor{ACOio}, %\href{https://github.com/probinso/Whales}{ACOio}
-  \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer library, to help rejuvenate data access for researchers
+  \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer library, to ease acoustic research on 10 year audio track
   %\item Identified and implemented advanced machine learning models from research papers
-  %\item Developed principled audio processing and noise-suppression, focused on marine bioacoustics
+  \item Used principled audio processing and noise-suppression, focused on marine bioacoustics
   %\item Managed consulting relationships with, and between, \href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{OHSU CSLU}, \href{http://aco-ssds.soest.hawaii.edu/}{UH ACO},  and \href{https://www.apl.washington.edu/}{UW APL} researchers
   \item Implemented analysis tools, denoising, and \href{https://github.com/probinso/gumiho-network}{deep learning models} from research papers
   %\item Taught \& developed materials for Deep Learning course in using VAEs for anomaly detection
+  \item Led and enabled a four week community data deep dive series through \censor{PDSG} (local meetup group)
 \item \LU{\censor{ACOio}, Keras, tensorflow, PyTorch, scipy.signal, Jupyter, flask, Angular}
 \end{**mylist}
 
@@ -190,9 +172,9 @@
 
 \begin{**mylist}{\censor{NASA Jet Propulsion Lab} \tabb Graduate Data Science Intern}{June 2018 - Sept 2018}
 \item Developed employee \href{https://github.com/probinso/expert-modeling-system}{Expertise Recommender System}, automating expensive mission-critical tasks
-\item Fully specified programmatic solutions from use-case meetings with top \censor{NASA/JPL} employees
+\item Completed deployable prototype from research papers and meetings with top \censor{NASA/JPL} employees
 %\item Prototyped matching experts against mission critical anomalies, automating expensive tasks
-%\item Implemented stable/principled text normalization, tokenization, and model evaluation
+\item Implemented stable/principled text normalization, tokenization, and model evaluation
 %\item Open Source contributions to the \censor{gensim natural language processing} library
 \item \LU{Python, nltk, gensim, pyLDAvis, pandas, Jupyter, \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{Author-Topic-Model}, \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{LDA}}
 \end{**mylist}
@@ -201,8 +183,8 @@
 \item Contributed to microbiome population analytics tools studying menopause \& reproductive health
 %\item Supported research on developing brains, including \href{https://abcdstudy.org/}{ABCD}, and several ADHD/ASD studies
 \item Developed processing pipeline and \href{https://gitlab.com/Fair_lab/HCPVaTT}{audit tools} for reported \& fMRI data, on AHDH/ASD studies
-\item Acted as \href{https://github.com/probinso/ABC}{Git}, OSS, and securities lead, developing trainings and enforcing best practices
-\item Authord \& established project development guidelines, Acting Git Czar \& Lab Security Representative
+  %\item Acted as \href{https://github.com/probinso/ABC}{Git}, OSS, and securities lead, developing trainings and enforcing best practices
+\item Authored project guidelines, \href{https://github.com/probinso/ABC}{git trainings}, \& acted as lab security/privacy representative
 \item \LU{\href{https://github.com/probinso/Intro-to-Python}{Python}, Bash, R, dplyr, neo4j, ponyorm, stan, GitLab, Docker}
 \end{**mylist}
 
