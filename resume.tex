@@ -8,6 +8,7 @@
   vmargin=0.5in,
   twoside=false,
   nohead,nofoot,
+  showframe,
 ]{geometry}
 \usepackage[english]{babel}
 \usepackage{censor}
@@ -23,7 +24,7 @@
 }
 
 \usepackage{titlesec}
-\titlespacing*{\subsubsection}{0pt}{*2.5}{*0}
+\titlespacing*{\subsubsection}{0pt}{*2.1}{*0}
 \titlespacing*{\subsection}{0pt}{10pt}{*0}
 \usepackage{fontenc}
 \usepackage{courier}
@@ -137,19 +138,18 @@
 \BSec{}%Work Experience
 
 \begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb R\&T Machine Learning Engineer}{March 2020 - present}
-%\item Software developer on multiple research \& product driven teams, in a remote environment
-\item Developed distributed feature extraction \& ML training pipelines supporting \censor{DARPA} programs
-%\item Produced research, identifying libraries with security vulnerabilities in compiled binaries
-\item Produced ML security research on compiled binaries in decompilation \& vulnerability detection
-\item Evaluated \& completed technology transfer of university research work into release products
-\item \LU{Python, C, PyTorch, RetDec, GTIRB, Docker, celery, GitLab.ci, LevelDB, MongoDB}
+\item Transferred NLP research to binaries in decompilation/reverse engineering applications
+\item Performed research \& evaluated ML work on compiled binaries in vulnerability detection
+\item Developed feature extraction \& ML training pipelines supporting \censor{DARPA} programs
+\item Completed technology transfer of university research work to release products
+\item \LU{Python, C, PyTorch, RetDec, asts.AST, GTIRB, Docker, celery, GitLab.ci}
 \end{**mylist}
 
 \begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Mobile / Full Stack Developer }{March 2019 - March 2020}
 %\item Contributed as full stack developer on a small team, in both remote and on-site environments
-\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective} App}, a cross platform phone app supporting citizen-science work
+\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective} App}, x-platform phone app supporting citizen science projects
 \item Core developer for web user tools in \censor{whale} sight logging, identification, \& tracking
-\item \LU{Native/TypeScript, Angular, Android, iOS, PostgreSQL, Java, Spring, firebase}
+\item \LU{Native/TypeScript, Angular, Android/iOS, PostgreSQL, Java, Spring, firebase}
 \end{**mylist}
 
 \begin{comment}
@@ -160,10 +160,10 @@
 \end{comment}
 
 \begin{**mylist}{\censor{NASA Jet Propulsion Lab} \tabb Data Science Intern}{June 2018 - Sept 2018}
-\item Developed employee \href{https://github.com/probinso/expert-modeling-system/}{Expertise Recommender System}, automating expensive mission-critical tasks
-\item Completed deployable prototype from research papers \& meetings with top \censor{NASA/JPL} employees
-%\item Prototyped matching experts against mission critical anomalies, automating expensive tasks
-\item Implemented stable/principled text normalization, tokenization, \& model evaluation
+\item Developed employee \href{https://github.com/probinso/expert-modeling-system/}{Expertise Recommender System}, automating expensive critical tasks
+\item Designed \& completed prototype from research papers \& advisement of top \censor{NASA/JPL} employees
+\item Presented \& defended NLP/ML prototype to non-computational decision makers at JPL.
+%\item Presented on stable/principled NLP/ML normalization, tokenization, \& model evaluation
 %\item Open Source contributions to the \censor{gensim natural language processing} library
 \item \LU{Python, nltk, gensim, pyLDAvis, pandas, Jupyter, \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{Author-Topic-Model}, \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{LDA}}
 \end{**mylist}
@@ -176,13 +176,15 @@
 \end{**mylist}
 
 \begin{**mylist}{Graduate Research \censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{CSLU}/\href{http://aco-ssds.soest.hawaii.edu/}{ACO}}\tabb Machine Learning (Audio Data)}{Sept 2017 - Dec 2019}
-  \item Implemented \& transferred \href{https://github.com/probinso/gumiho-network}{deep anomaly detectors} from research papers to marine bio-acoustics
+  \item Implemented \& transferred \href{https://github.com/probinso/gumiho-network}{anomaly detectors} from research papers to marine bio-acoustics
 \item Designed, developed, \& managed research work in a remote environment without oversight
   %\item Researched novel techniques to study/index bioacoustic events from a 10 year audio track
   \item Measured effects of spectral subtraction \& deep noise reduction techniques on ML models
   %\item Developed deep noise-reduction machine to clean indexed audio, for better feature extraction
   %\item Developed deep unsupervised feature extractor for anomalous audio event clustering
-\item Developed \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer, enabling research on 10 year (12 TB) continuous audio track
+  \item Developed \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer,
+    enabling
+    research on (10 yr/12 TB) continuous audio track
   %\item Identified \& implemented advanced machine learning models from research papers
   %\item Managed consulting relationships with, \& between, \href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{OHSU CSLU}, \href{http://aco-ssds.soest.hawaii.edu/}{UH ACO},  \& \href{https://www.apl.washington.edu/}{UW APL} researchers
 %  \item Implemented analysis tools, denoising, \& \href{https://github.com/probinso/gumiho-network}{deep learning models} from research papers
@@ -193,14 +195,13 @@
 
 \begin{**mylist}{\censor{RGB Optics} \PT \tabb Contractor/Consultant}{Nov 2015 - present}
 \item Developed image processing tools for low cost spectral analysis, to study light pollution
-\item Authored educational material in light pollution's effect on economy, biology, \& technology
+\item Authored training material: Effect of light pollution on economy, biology, \& technology
 \item Statistics, image processing, and optimizations consultant on low cost medical blood tests
   %\item Developed a \href{https://github.com/probinso/color-pollution}{cloud memoizing data pipeline} for caching computationally expensive operations
 \item Developed natural language processing tools to organize \& explore Myeloma clinical trials
 \item Provide technology tutorials/consultation on code optimization, NLP, \& image processing
 %\item Provided hands on training to grow industry scientists in Python
-\item \LU{Python, skimage, sklearn, AWS, \href{https://github.com/text-machine-lab/CliNER}{CliNER}, \href{https://github.com/probinso/morphological-watersheds}{Morphological Watersheds}, OpenCV
-}
+\item \LU{Python, skimage, sklearn, AWS, \href{https://github.com/text-machine-lab/CliNER}{CliNER}, \href{https://github.com/probinso/morphological-watersheds}{Morphological Watersheds}, OpenCV}
 \end{**mylist}
 
 \begin{comment}
@@ -216,37 +217,17 @@
 \item Setup infrastructure in AWS to enable secure \& sustainable remote-first workflow
 \item Provided hands on training in Python \& R to industry professionals
 \item \LU{R, AWS, PostgreSQL}
-\end{**mylist}
-\end{comment}
-
-
-\begin{comment}
-\begin{**mylist}{Contractor/Consultant}{}
-\item \hspace{-1em}
-  {\bf{RGB Optics} / }\href{http://cwenergyusa.com/star-friendly/}{\bf{C\&W Energy USA}} \PT\hfill{\bf{Nov. 2015 - Aug. 2018}}
-\item Developed custom photo image processing tools for low cost spectral profile analysis
-\item Authored educational material in light pollution's effect on economy, biology, \& technology
-\item Developed a \href{https://github.com/probinso/color-pollution}{cloud memoizing data pipeline} for caching computationally expensive operations
-\item Provided live technology tutorials \& consulting on optimization \& image processing
-\item Provided hands on training to grow industry scientists in Python
-\item \hspace{-1em}
-  {\bf{ComScore}}\hfill{\bf{June 2016 - Sept 2016}}
-\item Worked to support large, custom, memory mapped, data store for demographic analysis
-\item \hspace{-1em}
-  \href{http://pdxcodeguild.com/}{\bf{PDXCodeGuild}} \PT\hfill{\bf{June 2016}}
-\item Developed \& taught introductory \href{https://github.com/probinso/Intro-to-Python}{python course} material for coding boot-camp
-\item \hspace{-1em}
-  \href{http://www.melinae.com/}{\bf{Melinae}} \hfill{\bf{March 2016}}
-\item Setup infrastructure in AWS to enable secure \& sustainable remote-first workflow
-\item Provided hands on training in Python \& R to industry professionals
 \item \LU{Python, numpy, skimage, R, AWS, PostgreSQL, Perl, C++, Jira, ZenHub}
 \end{**mylist}
 \end{comment}
 
 \begin{comment}
-\vspace{2em}
-       {\center {\em\footnotesize continued...}\par}
+  \begin{((mylist}{\href{http://pdxcodeguild.com/}{\bf{PDXCodeGuild}} \PT \tabb {\bf{June 2016}}}
+  \item Developed \& taught introductory \href{https://github.com/probinso/Intro-to-Python}{python course} material for coding boot-camp
+\item \hspace{-1em}
+  \end{**mylist}
 \end{comment}
+
 
 %\newpage
 \begin{**mylist}{\censor{\href{http://galois.com}{Galois Inc.}} \tabb R\&D Software Engineer}{April 2014 - Dec 2015}
@@ -377,13 +358,13 @@
 
   \begin{*mylist}{\censor{Oregon Health Science} University}{Computer Science \& Machine Learning}
   \item Masters of Science %(2019)
-  \item 2016 - 2019%present%\hfill {\em Expected Graduation: Sept 2019}
+%  \item 2016 - 2019%present%\hfill {\em Expected Graduation: Sept 2019}
 \end{*mylist}\columnbreak
 
   \raggedright
   \begin{*mylist}{\censor{Western Washington} University}{Computer Science \& Cryptography}
   \item Bachelor of Science, Math Minor %(2012)
-  \item 2007 - 2012
+%  \item 2007 - 2012
   \end{*mylist}
 \end{multicols}
 
