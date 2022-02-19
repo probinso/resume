@@ -23,7 +23,7 @@
 }
 
 \usepackage{titlesec}
-\titlespacing*{\subsubsection}{0pt}{*3.0}{*0.2}
+\titlespacing*{\subsubsection}{0pt}{*2.3}{*0.2}
 \titlespacing*{\subsection}{0pt}{10pt}{*0}
 \usepackage{fontenc}
 \usepackage{courier}
@@ -106,13 +106,13 @@
 %\subsection*{Personal Statement}
 \vspace{1em}
  {\blocking
-   %Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+   %Lorem Ipsum is simply dummy text of the printing \& typesetting industry. Lorem Ipsum
    %has been the industry's standard dummy text ever since the 1500s, when an unknown...
    \noindent
    I'm an experienced Software Engineer / Data Scientist with passion for interdisciplinary work in
    environmental, social good, citizen science, \& security projects.
-   %I'm particularly interested in causal inference and bayesian applications to intervention problems.
-   %I want to study ecology and leverage my experience in software engineering and data science to help a team
+   %I'm particularly interested in causal inference \& bayesian applications to intervention problems.
+   %I want to study ecology \& leverage my experience in software engineering \& data science to help a team
 }
 %\end{comment}
 
@@ -127,22 +127,16 @@
 \item Rubber Ducking
 \end{mylist}
 
-%\begin{comment}
 \begin{mylist}{Technologies}{4}
 \item Python/PyTorch/sklearn
-%\item Linux/Bash
 \item C/C++
-\item R/dplyr
-\item Angular/NativeScript
+\item R/\href{https://dplyr.tidyverse.org/}{dplyr}
+\item Angular/\href{https://nativescript.org/}{NativeScript}
 \item skimage/scipy.signal
 \item Docker
-%\item firebase
-\item Gtrib/Dwarf/asts.AST
-%\item Java/scala/figaro
-%\item SLURM/celery
+\item \href{https://pypi.org/project/gtirb/}{\censor{Gtirb}}/\href{https://dwarfstd.org/}{Dwarf}/\href{https://pypi.org/project/asts/}{\censor{asts.AST}}
 \item AWS/GCP/firebase
 \end{mylist}
-%\end{comment}
 
 \newcommand{\BSec}[1]{
 %\vspace{1em}
@@ -155,16 +149,16 @@
 \begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb R\&T Machine Learning Engineer}{March 2020 - present}
 \item Conducted language processing research to increase legibility in binary decompilation tasks
 \item Performed research \& evaluated ML work on compiled binaries for vulnerability detection
-%\item Developed distributed feature extraction \& ML training pipelines supporting \censor{DARPA} programs
-\item Implemented and incorporated solutions from academic research code to release products
+\item Developed data pipeline to distribute feature extraction over networked virtual machines
+\item Implemented \& incorporated code from academic research articles into release products
 \item Participated in authoring \& reviewing \censor{SBIR}/\censor{STTR} proposals for \censor{DOD}/\censor{DARPA} solicitations
-%\item \LU{Python, C, PyTorch, \href{https://retdec.com/}{RetDec}, \href{https://pypi.org/project/asts/}{asts.AST}, \href{https://pypi.org/project/gtirb/}{\censor{GTIRB}}, \href{https://dwarfstd.org/}{Dwarf}, Docker, celery, \href{https://github.com/CMUSTRUDEL/DIRTY}{\censor{DIRTY}}}
+  %\item \LU{Python, C, PyTorch, \href{https://retdec.com/}{RetDec}, \href{https://pypi.org/project/asts/}{asts.AST}, \href{https://pypi.org/project/gtirb/}{\censor{GTIRB}}, \href{https://dwarfstd.org/}{Dwarf}, Docker, celery, \href{https://github.com/CMUSTRUDEL/DIRTY}{\censor{DIRTY}}}
 \end{**mylist}
 
 \begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Mobile / Full Stack Engineer}{March 2019 - March 2020}
-%\item Contributed as full stack developer on a small team, in both remote and on-site environments
+%\item Contributed as full stack developer on a small team, in both remote \& on-site environments
 \item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective} App}, a x-platform phone app supporting citizen science projects
-\item Developed core user tools for tracking \censor{whale} sightings and individual identification
+\item Developed core tools for recording \censor{marine life} sightings \& individual \censor{whale} identification
 %\item Core developer of user tools in logging \censor{whale} sightings for identification \& tracking
 \item Contributed to data \& access API supporting researchers in population ecology projects
 %\item \LU{Native/TypeScript, Angular, Android/iOS, PostgreSQL, Java, Spring, firebase}
@@ -181,22 +175,23 @@
 \item Developed \href{https://github.com/probinso/expert-modeling-system/}{employee expert recommender system}, eliminating weeks in ticket triage/assignment
 %  for matching engineers to complex tasks
 \item Designed \& completed prototype from research papers \& advisement of top \censor{NASA/JPL} employees
-\item Defended unconventional application of topic model (LDA) to data science team at \censor{JPL}
+\item Defended unconventional application of latent dirichlet allocation (a topic mixture model)
 %\item Presented on stable/principled NLP/ML normalization, tokenization, \& model evaluation
-%\item Open Source contributions to the \censor{gensim natural language processing} library
+\item Open source contribution, fixing bugs in the \censor{gensim} natural language processing library
 %\item \LU{Python, nltk, gensim, pyLDAvis, pandas, Jupyter, \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{Author-Topic-Model}, \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{LDA}}
 \end{**mylist}
 
 \begin{**mylist}{\href{https://www.ohsu.edu/school-of-medicine/developmental-cognition-and-neuroimaging-lab}{\censor{OHSU DCAN Neuroimaging Lab}} \tabb Graduate Research Assistant}{Oct 2017 - June 2018}
-\item Contributed to microbiome population analytics, studying menopause \& reproductive health
-\item Developed processing pipeline \& \href{https://gitlab.com/Fair_lab/HCPVaTT}{audit tools} for survey \& fMRI data, on \href{https://abcdstudy.org}{ADHD/ASD studies}
-\item Provided \href{https://github.com/probinso/ABC}{git}, project management, \& security trainings for teams with varying backgrounds %readiness levels
+%\item Contributed to microbiome population analytics, studying menopause \& reproductive health
+\item Studied menopause \& reproductive health, by analysing population relationships of microbiomes
+\item Developed data processing/\href{https://gitlab.com/Fair_lab/HCPVaTT}{audit tools} for survey \& fMRI data, supporting \href{https://abcdstudy.org}{ADHD/ASD studies}
+\item Provided \href{https://github.com/probinso/ABC}{git}, project management, \& security trainings for teams with varying tech readiness
 %\item \LU{\href{https://github.com/probinso/Intro-to-Python}{Python}, Bash, R, dplyr, phyloseq, neo4j, ponyorm, stan, GitLab, Docker}
 \end{**mylist}
 
 \begin{**mylist}{Graduate Research \censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{CSLU}/\href{http://aco-ssds.soest.hawaii.edu/}{ACO}}\tabb Machine Learning (Audio Data)}{Sept 2017 - Dec 2019}
 \item Developed \href{https://github.com/probinso/gumiho-network}{deep anomaly detectors} for marine acoustics from signal processing research
-\item Developed \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer, enabling research on (10 yr/12 TB) continuous audio track
+\item Developed \censor{\href{https://github.com/probinso/ACOio}{ACOio}} track explorer, enabling research on 10 year (12 TB) continuous audio track
   % \item Designed, developed, \& managed research work in a remote environment without oversight
   %\item Researched novel techniques to study/index bioacoustic events from a 10 year audio track
 \item Measured effects of spectral subtraction \& deep noise reduction techniques on ML models
@@ -205,15 +200,14 @@
   %\item Identified \& implemented advanced machine learning models from research papers
   %\item Managed consulting relationships with, \& between, \href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{OHSU CSLU}, \href{http://aco-ssds.soest.hawaii.edu/}{UH ACO},  \& \href{https://www.apl.washington.edu/}{UW APL} researchers
 %  \item Implemented analysis tools, denoising, \& \href{https://github.com/probinso/gumiho-network}{deep learning models} from research papers
-  %\item Taught \& developed materials for Deep Learning course in using VAEs for anomaly detection
-  \item Led \& enabled a four week community data deep dive series through \href{https://www.meetup.com/Portland-Data-Science-Group/}{\censor{PDSG}} on marine acoustics
+  \item Led \& enabled a four week community data deep dive, through \href{https://www.meetup.com/Portland-Data-Science-Group/}{\censor{PDSG}}, on marine acoustics
 %\item \LU{\censor{ACOio}, Keras, tensorflow, PyTorch, scipy.signal, Jupyter, flask, Angular}
 \end{**mylist}
 
 \begin{**mylist}{\censor{RGB Optics LLC} \tabb Volunteer Developer \& Consultant}{Nov 2015 - present}
-\item Developed remote sensing tools for low cost spectral analysis in light pollution surveys
-%\item Authored training material on effects of light pollution on economy, biology, \& technology
-\item Provided image processing consult on low cost infant hypoxic ischemic encephalopathy tests
+%\item Developed low cost remote sensing tools to identify types of light sources from citiscapes
+\item Developed remote sensing tools to identify sources in citiscapes for light pollution study
+\item Image processing consult on low cost blood tests for infant hypoxic ischemic encephalopathy
 \item Developed natural language processing (NLP) tools to explore Myeloma clinical trials
 \item Provided technology trainings/consultation on code optimization, NLP, \& image processing
 %\item \LU{Python, skimage, sklearn, AWS, \href{https://github.com/text-machine-lab/CliNER}{CliNER}, \href{https://github.com/probinso/morphological-watersheds}{Morphological Watersheds}, OpenCV}
@@ -248,7 +242,7 @@
 \item Developed \href{https://github.com/probinso/ppaml-eval-tools}{processing pipelines} \& workflows to enable evaluator work for \censor{DARPA} programs
 \item Helped run professional trainings to disseminate new probabilistic programming languages
 \item
-  Wrote on disenfranchisement under \href{https://freeandfair.us/}{\censor{Free \& Fair}} for secure internet voting
+  Wrote on disenfranchisement under \href{https://freeandfair.us/}{\censor{Free \& Fair}} for \censor{secure internet voting}
   %\href{https://www.usvotefoundation.org/}{US Vote Foundation}
   \href{https://usvotefoundation-drupal.s3.amazonaws.com/prod/E2EVIV_nontechnical_audience_report.pdf}{feasibility study}
 \item Produced biannual quantitative \& qualitative reports for \censor{DARPA} \& participating \censor{\href{http://www.darpa.mil/program/probabilistic-programming-for-advancing-machine-Learning}{PPAML}} teams
