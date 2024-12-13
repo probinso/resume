@@ -28,9 +28,9 @@
 \usepackage{fontenc}
 \usepackage{courier}
 
-\usepackage{nohyperref}
-%\usepackage{hyperref}
-%\StopCensoring
+%\usepackage{nohyperref}
+\usepackage{hyperref}
+\StopCensoring
 \usepackage{url}
 
 \renewcommand*\familydefault{\ttdefault}
@@ -111,7 +111,8 @@
    %Lorem Ipsum is simply dummy text of the printing \& typesetting industry. Lorem Ipsum
    %has been the industry's standard dummy text ever since the 1500s, when an unknown...
    \noindent
-   I'm an experienced Software Engineer / Data Scientist with passion for interdisciplinary, environmental, scientific, privacy, OSInt \& citizen science projects.
+   I'm an experienced Software Engineer / Data Scientist with passion for interdisciplinary, environmental,
+   scientific, privacy, OSInt \& citizen science projects.
    %I'm particularly interested in causal inference \& bayesian applications to intervention problems.
    %I want to study ecology \& leverage my experience in software engineering \& data science to help a team
 }
@@ -148,11 +149,12 @@
 
 \BSec{}%Work Experience
 
-\begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fish Watch}} \tabb Scientific Programmer}{May 2022 - present}
-\item Remote sensing research, tracking \censor{ships} from \censor{SAR}/\censor{optical} satellite images \& \censor{AIS/VMS} data
+\begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fish Watch}} \tabb Scientific Programmer (Research)}{May 2022 - April 2025}
+\item Remote sensing, using CFAR to track \censor{ships} from \censor{SAR} satellite images to match \censor{AIS/VMS} data
 %\item Technical lead on strategies in organizing satellite metadata to evaluate new data sources
 \item Developed \href{https://github.com/GlobalFishingWatch/gfwsat/}{\censor{gfwsat}} to join \& catalog millions of satellite scenes, serving global ocean surveys
-\item Developed tools to quickly label very large images on common machines without deformation
+%\item Developed tools to quickly label very large images on common machines without deformation
+\item Developed custom labeler for very large \censor{SAR} images, to make training data for object detection
 %\item Authored blog \& supporting documents on  research work to promote private sector data sharing
 %\item Led standards of convention group for common use data pulled across many providers
 %\item Optimized data fusion tasks in matching \censor{AIS/VMS} with results from object detection models
@@ -161,6 +163,8 @@
   %\item On occasion supported 24-hour development cycle with global team, when under tight time constraints
 % \item Managed small interdepartmental/international projects to accomplish interdisciplinary work
 \item Led technology transfer work, moving research prototypes to production \& automated pipelines
+\item Developed a light ORM/utils library to enforce best practices \& documentaiton in cloud/IO
+\item Ran audits on research projects to address security, documentation, \& repo cleanliness issues
 \end{**mylist}
 
 \begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb Machine Learning Researcher II}{March 2020 - April 2022}
@@ -192,7 +196,7 @@
 \end{comment}
 
 \begin{**mylist}{\censor{NASA Jet Propulsion Lab} \tabb Data Science Intern (NLP)}{June 2018 - Sept 2018}
-\item Prototyped \href{https://github.com/probinso/expert-modeling-system/}{employee expert recommender system}, to eliminate weeks in ticket triage/assignment
+\item Prototyped \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{employee expert recommender system}, to eliminate weeks in ticket triage/assignment
 \item Designed \& completed prototype from research papers \& advisement of top \censor{NASA/JPL} employees
 %\item Defended \& proved unconventional application of \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{topic model}, typically used in attribution
 %\item Open source contribution, fixing bug in \censor{\href{https://github.com/RaRe-Technologies/gensim/pull/2133}{gensim}}'s natural language processing library
