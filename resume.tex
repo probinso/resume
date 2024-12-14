@@ -58,7 +58,7 @@
 
 \newenvironment{**mylist}[2]{
 
-\subsubsection*{#1\hfill#2}
+\subsubsection*{\RestartCensoring #1 \StopCensoring \hfill#2}
   \small
   \begin{list}{}{}
     \setlength{\topsep}{0pt}
@@ -98,7 +98,7 @@
  (+1) \censor{206}.\censor{377}.\censor{9747}
 \end{multicols}
 \hspace{-.5in}{\noindent\small\bf\href{https://github.com/probinso}{https://github.com/\censor{probinso}}}
-
+\StopCensoring
 
 %\vspace{1em}
 %\hspace{-.5in}{\noindent\small\bf\url{http://probinso.dyn-o-saur.com}\hfill Last Updated : \today\\}
@@ -148,7 +148,6 @@
 \def\tabb{\tab- }  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-
 \begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fish Watch}} \tabb Scientific Programmer (Research)}{May 2022 - April 2025}
 \item Remote sensing, using \censor{CFAR} detector to match \censor{ships} from \censor{SAR} satellite images to \censor{AIS/VMS} data
 %\item Technical lead on strategies in organizing satellite metadata to evaluate new data sources
@@ -389,7 +388,7 @@
 \end{comment}
 
 \BSec{}%Education}
-
+\RestartCensoring
 \begin{multicols}{2}
 
   \begin{*mylist}{\censor{Oregon Health Science} University}{Computer Science \& Machine Learning}
@@ -505,4 +504,4 @@
 \end{comment}
 
 \end{document}
-B
+
