@@ -28,8 +28,8 @@
 \usepackage{fontenc}
 \usepackage{courier}
 
-\usepackage{nohyperref}
-%\usepackage{hyperref}
+%\usepackage{nohyperref}
+\usepackage{hyperref}
 %\StopCensoring
 \usepackage{url}
 
@@ -58,7 +58,7 @@
 
 \newenvironment{**mylist}[2]{
 
-\subsubsection*{\RestartCensoring #1 \StopCensoring \hfill#2}
+\subsubsection*{#1\hfill#2}
   \small
   \begin{list}{}{}
     \setlength{\topsep}{0pt}
@@ -98,7 +98,7 @@
  (+1) \censor{206}.\censor{377}.\censor{9747}
 \end{multicols}
 \hspace{-.5in}{\noindent\small\bf\href{https://github.com/probinso}{https://github.com/\censor{probinso}}}
-\StopCensoring
+
 
 %\vspace{1em}
 %\hspace{-.5in}{\noindent\small\bf\url{http://probinso.dyn-o-saur.com}\hfill Last Updated : \today\\}
@@ -148,10 +148,10 @@
 \def\tabb{\tab- }  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-\begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fish Watch}} \tabb Scientific Programmer (Research)}{May 2022 - April 2025}
+\begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fishing Watch}} \tabb Scientific Programmer (Research)}{May 2022 - present}
 \item Remote sensing, using \censor{CFAR} detector to match \censor{ships} from \censor{SAR} satellite images to \censor{AIS/VMS} data
 %\item Technical lead on strategies in organizing satellite metadata to evaluate new data sources
-\item Developed \href{https://github.com/GlobalFishingWatch/gfwsat/}{\censor{gfwsat}} to join \& catalog millions of satellite scenes, serving global ocean surveys
+\item Developed \censor{gfwsat} to join \& catalog millions of satellite scenes, serving global ocean surveys
 %\item Developed tools to quickly label very large images on common machines without deformation
 \item Developed custom labeler for very large \censor{SAR} images, to make training data for object detection
 %\item Authored blog \& supporting documents on  research work to promote private sector data sharing
@@ -161,9 +161,9 @@
 %\item Developed collaboration strategies \& best practices for remote \& international teams
   %\item On occasion supported 24-hour development cycle with global team, when under tight time constraints
 % \item Managed small interdepartmental/international projects to accomplish interdisciplinary work
-\item Led technology transfer work, moving research prototypes to automated pipelines \& production
-\item Developed a light ORM/utils library to enforce best practices \& documentaiton in cloud/IO
-\item Ran audits on research projects to address security, documentation, \& repo cleanliness issues
+\item Led technology transfer work, moving research prototypes to production \& automated pipelines
+\item Developed a light ORM/utils library to enforce cloud/database best practices \& documentaiton
+%\item Ran audits on research projects to address security, documentation, \& repo cleanliness issues
 \end{**mylist}
 
 \begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb Machine Learning Researcher II}{March 2020 - April 2022}
@@ -180,7 +180,7 @@
 
 \begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Mobile \& Full Stack Engineer}{March 2019 - March 2020}
 %\item Contributed as full stack developer on a small team, in both remote \& on-site environments
-\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective}}, x-platform citizen sciencery app to promote \censor{eco-tourism} \& research
+\item Developed \href{https://play.google.com/store/apps/details?id=com.animalus.scidir&hl=en_US}{\censor{Polar Collective}}, x-platform citizen science phone app enabling \censor{eco-tourism} \& research
 \item Developed core tools for tracking \censor{marine life} sightings \& individual \censor{whale} identification
 %\item Core developer of user tools in logging \censor{whale} sightings for identification \& tracking
 \item Contributed to data access API \& web UI, supporting researchers in \censor{population ecology} studies
@@ -388,7 +388,7 @@
 \end{comment}
 
 \BSec{}%Education}
-\RestartCensoring
+
 \begin{multicols}{2}
 
   \begin{*mylist}{\censor{Oregon Health Science} University}{Computer Science \& Machine Learning}
