@@ -28,9 +28,9 @@
 \usepackage{fontenc}
 \usepackage{courier}
 
-\usepackage{nohyperref}
-%\usepackage{hyperref}
-%\StopCensoring
+%\usepackage{nohyperref}
+\usepackage{hyperref}
+\StopCensoring
 \usepackage{url}
 
 \renewcommand*\familydefault{\ttdefault}
@@ -92,8 +92,9 @@
 
 \pagestyle{empty}% remove page number
 \begin{multicols}{3}
- {\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
-\censor{Tiranë, Albania}\\ \columnbreak UTC+2\\
+{\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
+\censor{Currently Traveling}\\ \columnbreak UTC+2\\
+%\censor{Tiranë, Albania}\\ \columnbreak UTC+2\\
  \censor{probinso}+res@protonmail.com\\
  (+1) \censor{206}.\censor{377}.\censor{9747}
  %(+351) \censor{916}.\censor{519}.\censor{479}
@@ -149,7 +150,7 @@
 \def\tabb{\tab- }  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-\begin{**mylist}{\href{https://blueoasis.pt/}{\censor{Blue Oasis}} \tabb Digital Twin Engineer (Ocean Sciences)}{June 2025 - present}
+\begin{**mylist}{\href{https://blueoasis.pt/}{\censor{Blue Oasis}} \tabb Digital Twin Engineer (Ocean Sciences)}{May 2025 - present}
 %\item Design \& implementation of sensor agnostic ML models in edge deployed low resource environments
 %\item Custom acoustics IR system to drive \& enable research in feature extraction strategies
 \item Contributed to multi-label edge marine acoustics ML pipeline, to track vessels \& marine life
