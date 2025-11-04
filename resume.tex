@@ -72,14 +72,24 @@
 
 \newenvironment{**mylist}[4][]%
 {%
-  \subsubsection*{\censor{#2}\tabb #3\hfill #4}%
+%  \subsubsection*{\censor{#2}\tabb #3\hfill #4}%
   % Specialty line (optional, tiny + collapsed spacing)
 %  \if\relax\detokenize{#1}\relax
 %  \else
 %    \begingroup\scriptsize\itshape #1\par\endgroup
 %    \vspace{-0.6ex} % << tighten vertical space here
 %  \fi
-  \small
+\subsubsection*{%
+    \censor{#2}\tabb #3%
+    \if\relax\detokenize{#1}\relax
+      % no specialty
+    \else
+      {\;\;(#1)}%
+    \fi
+    \hfill #4%
+}%
+
+\small
   \begin{list}{}{%
     \setlength{\topsep}{.2pt}%
     \setlength{\itemsep}{.8pt}%
@@ -174,11 +184,12 @@
 \newcommand{\BSec}[1]{
 %\vspace{1em}
 \noindent{\hspace{\bsp} \LARGE{\bf #1}{ }\hrulefill}}
-\TabPositions{2.2in} % convenient location
+%\TabPositions{2.2in} % convenient location
+\TabPositions{1.71in} % convenient location
 \def\tabb{\tab- }  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-\begin{**mylist}[Ocean Sciences]{\href{https://blueoasis.pt/}{Blue Oasis}}{Digital Twin ML Engineer}{May 2025 - Oct 2025}
+\begin{**mylist}[Ocean Sciences]{\href{https://blueoasis.pt/}{Blue Oasis}}{Digital Twin Engineer}{May 2025 - Oct 2025}
 \item Contributed to multi-label edge marine acoustics ML pipeline, to track vessels \& marine life
 %\item Made reproducable \& hardened experiment flows for marine acoustics multi-label edge ML pipeline
 %\item Developed \& implemented custom features to identify vessel classes, with acoustics researchers 
@@ -238,7 +249,7 @@
 \end{**mylist}
 \end{comment}
 
-\begin{**mylist}[Natural Text]{NASA's Jet Propultion Lab}{Data Science Intern}{June 2018 - Sept 2018}
+\begin{**mylist}[Natural Text]{NASA JPL}{Data Science Intern}{June 2018 - Sept 2018}
 \item Prototyped \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{employee expert recommender system}, to eliminate weeks in ticket triage/assignment
 \item Designed \& completed prototype from research papers \& advisement of top \censor{NASA/JPL} employees
 %\item Defended \& proved unconventional application of \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{topic model}, typically used in attribution
