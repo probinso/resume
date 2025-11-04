@@ -56,7 +56,9 @@
    \setlength{\parskip}{0pt}
    \setlength{\parsep}{0pt}}{\end{list}\end{multicols}\normalsize}
 
-\newenvironment{**mylist}[2]{
+
+\begin{comment}
+\newenvironment{**mylist}[3]{
 
 \subsubsection*{#1\hfill#2}
   \small
@@ -65,6 +67,31 @@
    \setlength{\itemsep}{.8pt}
    \setlength{\parskip}{0pt}
    \setlength{\parsep}{0pt}}{\end{list}\normalsize}
+\end{comment}
+
+
+\newenvironment{**mylist}[4][]%
+{%
+  \subsubsection*{\censor{#2}\tabb #3\hfill #4}%
+  % Specialty line (optional, tiny + collapsed spacing)
+%  \if\relax\detokenize{#1}\relax
+%  \else
+%    \begingroup\scriptsize\itshape #1\par\endgroup
+%    \vspace{-0.6ex} % << tighten vertical space here
+%  \fi
+  \small
+  \begin{list}{}{%
+    \setlength{\topsep}{.2pt}%
+    \setlength{\itemsep}{.8pt}%
+    \setlength{\parskip}{0pt}%
+    \setlength{\parsep}{0pt}%
+  }%
+}%
+{%
+  \end{list}%
+}
+
+
 
 \newenvironment{*mylist}[2]{
   \subsection*{#1}
@@ -93,7 +120,7 @@
 \pagestyle{empty}% remove page number
 \begin{multicols}{3}
 {\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
-\censor{West Coast, US}\\ \columnbreak UTC-7\\
+\censor{West Coast, US}\\ \columnbreak UTC-8\\
 %\censor{Tiranë, Albania}\\ \columnbreak UTC+2\\
  \censor{probinso}+res@protonmail.com\\
  (+1) \censor{206}.\censor{377}.\censor{9747}
@@ -113,7 +140,7 @@
    %Lorem Ipsum is simply dummy text of the printing \& typesetting industry. Lorem Ipsum
    %has been the industry's standard dummy text ever since the 1500s, when an unknown...
    \noindent
-   10+ years experience in machine learning \& software on interdisciplinary teams, supporting natural sciences, computer securities, remote sensing, \&|| citizen sciencery  % passive monitoring
+   10+ years experience in machine learning \& software on interdisciplinary teams supporting natural sciences, computer securities, remote sensing, \&|| citizen sciencery  % passive monitoring
    %I'm particularly interested in causal inference \& bayesian applications to intervention problems.
    %I want to study ecology \& leverage my experience in software engineering \& data science to help a team
 }
@@ -147,11 +174,11 @@
 \newcommand{\BSec}[1]{
 %\vspace{1em}
 \noindent{\hspace{\bsp} \LARGE{\bf #1}{ }\hrulefill}}
-\TabPositions{1.75in} % convenient location
+\TabPositions{2.2in} % convenient location
 \def\tabb{\tab- }  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-\begin{**mylist}{\href{https://blueoasis.pt/}{\censor{Blue Oasis}} \tabb Digital Twin Engineer (Ocean Sciences)}{May 2025 - Oct 2025}
+\begin{**mylist}[Ocean Sciences]{\href{https://blueoasis.pt/}{Blue Oasis}}{Digital Twin Engineer}{May 2025 - Oct 2025}
 \item Contributed to multi-label edge marine acoustics ML pipeline, to track vessels \& marine life
 %\item Made reproducable \& hardened experiment flows for marine acoustics multi-label edge ML pipeline
 %\item Developed \& implemented custom features to identify vessel classes, with acoustics researchers 
@@ -160,7 +187,8 @@
 \item Advised DL \& surrogate model design on \censor{\href{https://maritime-forum.ec.europa.eu/node/7693_en}{PHAROS}} \& \censor{\href{https://blueoasis.pt/smartfisher/}{SmartFisher}}, for ocean ecosystem monitoring 
 \end{**mylist}
 
-\begin{**mylist}{\href{https://globalfishingwatch.org/}{\censor{Global Fishing Watch}} \tabb Scientific Programmer (Earth Imaging)}{May 2022 - March 2025}
+
+\begin{**mylist}[Earth Imaging]{\href{https://globalfishingwatch.org/}{Global Fishing Watch}}{Scientific Programmer}{May 2022 - March 2025}
 \item Implemented remote sensing pipeline for detecting vessels \& matching to reported GPS locations
 \item Evaluated vessel detection over terrabytes of processed synthetic aperture radar (SAR) images
 %\item Technical lead on strategies in organizing satellite metadata to evaluate new data sources
@@ -179,7 +207,7 @@
 %\item Ran audits on research projects to address security, documentation, \& repo cleanliness issues
 \end{**mylist}
 
-\begin{**mylist}{\href{https://www.grammatech.com}{\censor{GrammaTech}} \tabb Deep Learning Engineer II (Security) }{March 2020 - April 2022}
+\begin{**mylist}[Security]{\href{https://www.grammatech.com}{GrammaTech}}{Deep Learning Engineer II}{March 2020 - April 2022}
 %\item Conducted language processing research to increase legibility in binary decompilation tasks
 %\item Performed deep learning \& ML research on binaries for software vulnerability detection
 %\item Research on compiled binaries in vulnerability detection \& improving legibility of decompilation %decompilation legibility tasks
@@ -191,7 +219,7 @@
   %\item \LU{Python, C, PyTorch, \href{https://retdec.com/}{RetDec}, \href{https://pypi.org/project/asts/}{asts.AST}, \href{https://pypi.org/project/gtirb/}{\censor{GTIRB}}, \href{https://dwarfstd.org/}{Dwarf}, Docker, celery, \href{https://github.com/CMUSTRUDEL/DIRTY}{\censor{DIRTY}}}
 \end{**mylist}
 
-\begin{**mylist}{\href{www.happywhale.com}{\censor{HappyWhale}} \tabb Mobile \& Full Stack Engineer}{March 2019 - March 2020}
+\begin{**mylist}{\href{www.happywhale.com}{HappyWhale}}{Mobile \& Full Stack Engineer}{March 2019 - March 2020}
 %\item Contributed as full stack developer on a small team, in both remote \& on-site environments
 \item Developed %\href{https://polarcollective.org/}{\censor{Polar Collective}},
   x-platform citizen science phone app
@@ -210,7 +238,7 @@
 \end{**mylist}
 \end{comment}
 
-\begin{**mylist}{\censor{NASA JPL} \tabb Data Science Intern (Natural Text)}{June 2018 - Sept 2018}
+\begin{**mylist}[Natural Text]{NASA's Jet Propultion Lab}{Data Science Intern}{June 2018 - Sept 2018}
 \item Prototyped \href{https://www.youtube.com/watch?v=_Oa4aSXjzhs}{employee expert recommender system}, to eliminate weeks in ticket triage/assignment
 \item Designed \& completed prototype from research papers \& advisement of top \censor{NASA/JPL} employees
 %\item Defended \& proved unconventional application of \href{https://mimno.infosci.cornell.edu/info6150/readings/398.pdf}{topic model}, typically used in attribution
@@ -219,7 +247,7 @@
 \end{**mylist}
 
 
-\begin{**mylist}{\censor{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{OHSU}} Neuroimage Lab \tabb \grd Research Assistant (Medical)}{Oct 2017 - June 2018}
+\begin{**mylist}[Medical]{\href{https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/}{OHSU} Neuroimage Lab}{\grd Research Assistant}{Oct 2017 - June 2018}
 %\item Contributed to microbiome population analytics, studying menopause \& reproductive health
 %\item Studied menopause \& reproductive health, by analysing population relationships of microbiomes
 \item Analyzed relationship of adjacent \censor{microbiome} populations for \censor{menopause} \& \censor{reproductive} health
@@ -228,7 +256,7 @@
 %\item \LU{\href{https://github.com/probinso/Intro-to-Python}{Python}, Bash, R, dplyr, phyloseq, neo4j, ponyorm, stan, GitLab, Docker}
 \end{**mylist}
 
-\begin{**mylist}{\censor{OHSU} MSc Research\tabb Machine Learning (Marine Acoustics)}{Sept 2017 - Dec 2019}
+\begin{**mylist}[Marine Acoustics]{OHSU MSc Research}{Machine Learning}{Sept 2017 - Dec 2019}
 \item Developed \href{https://github.com/probinso/ACOio}{track explorer} for 10YR continuous audio track, supporting \censor{\href{http://aco-ssds.soest.hawaii.edu/}{Aloha Cabled Observatory}} % 12 TB
 %\item Developed \href{https://github.com/probinso/gumiho-network}{deep anomaly detectors} for marine acoustics from signal processing research
 %\item Developed \href{https://github.com/probinso/gumiho-network}{VAEs \& anomaly detectors} for applied \censor{marine} acoustics in very noisy environments %from signal processing research papers
@@ -275,14 +303,14 @@
 \end{comment}
 
 \begin{comment}
-\begin{((mylist}{\href{http://pdxcodeguild.com/}{\bf{PDXCodeGuild}} \PT \tabb {\bf{June 2016}}}
+\begin{**mylist}{\href{http://pdxcodeguild.com/}{\bf{PDXCodeGuild}} \PT \tabb {\bf{June 2016}}}
 \item Developed \& taught introductory \href{https://github.com/probinso/Intro-to-Python}{python course} material for coding boot-camp
 \item \hspace{-1em}
 \end{**mylist}
 \end{comment}
 
 %\newpage
-\begin{**mylist}{\censor{\href{http://galois.com}{Galois Inc.}} \tabb R\&D Software Engineer}{April 2014 - Dec 2015}
+\begin{**mylist}{\href{http://galois.com}{Galois Inc.}}{R\&D Software Engineer}{April 2014 - Dec 2015}
 \item Developed \href{https://github.com/probinso/ppaml-eval-tools}{processing pipelines} \& workflows for \censor{evaluator} work on \href{https://www.darpa.mil/research/programs/probabilistic-programming-for-advancing-machine-Learning}{m}\href{https://galois.com/news/galois-awarded-10m-darpa-contract-make-legacy-systems-secure/}{u}\href{https://www.darpa.mil/program/safeware}{l}tiple \censor{SBIR}/\censor{STTR} programs
 %\item Developed strategies and automated pipelines for evaluator role on \href{https://www.darpa.mil/research/programs/probabilistic-programming-for-advancing-machine-Learning}{m}\href{https://galois.com/news/galois-awarded-10m-darpa-contract-make-legacy-systems-secure/}{u}\href{https://www.darpa.mil/program/safeware}{l}tiple \censor{DARPA} SBIR programs
 %\item Helped run languages summer school by presenting program progress \& managing brittle toolchains
@@ -525,6 +553,5 @@
 %\item WWU Computer Science Distinguished Scholar Award \hfill- Sep. 2007
 \end{**mylist}
 \end{comment}
-
 \end{document}
 
