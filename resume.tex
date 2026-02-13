@@ -57,28 +57,10 @@
    \setlength{\parsep}{0pt}}{\end{list}\end{multicols}\normalsize}
 
 
-\begin{comment}
-\newenvironment{**mylist}[3]{
-
-\subsubsection*{#1\hfill#2}
-  \small
-  \begin{list}{}{}
-    \setlength{\topsep}{.2pt}
-   \setlength{\itemsep}{.8pt}
-   \setlength{\parskip}{0pt}
-   \setlength{\parsep}{0pt}}{\end{list}\normalsize}
-\end{comment}
 
 
 \newenvironment{**mylist}[4][]%
 {%
-%  \subsubsection*{\censor{#2}\tabb #3\hfill #4}%
-  % Specialty line (optional, tiny + collapsed spacing)
-%  \if\relax\detokenize{#1}\relax
-%  \else
-%    \begingroup\scriptsize\itshape #1\par\endgroup
-%    \vspace{-0.6ex} % << tighten vertical space here
-%  \fi
 \subsubsection*{%
     \censor{#2}\tabb #3%
     \if\relax\detokenize{#1}\relax
@@ -193,8 +175,8 @@
 %\vspace{1em}
 \noindent{\hspace{\bsp} \LARGE{\bf #1}{ }\hrulefill}}
 
-\TabPositions{2.2in} % convenient location
-\def\tabb{\tab- }  % so easy reversals can be performed
+\TabPositions{2.4in} % convenient location
+\def\tabb{\tab}  % so easy reversals can be performed
 
 \BSec{}%Work Experience
 \begin{**mylist}[Ocean Digital Twins]{\href{https://blueoasis.pt/}{Blue Oasis}}{Contract Engineer}{May 2025 - Oct 2025}
