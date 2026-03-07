@@ -1,2 +1,2 @@
-defualt:resume.tex
-	pdflatex resume.tex
+defualt:philip_robinson.tex
+	pdflatex philip_robinson.tex
