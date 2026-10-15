@@ -7,7 +7,8 @@
   centering,
   vmargin=0.3953in,
   twoside=false,
-  nohead,nofoot,
+  nohead,
+  nofoot,
 ]{geometry}
 \usepackage[english]{babel}
 \usepackage{censor}
@@ -58,7 +59,7 @@
 
 
 
-
+\begin{comment}
 \newenvironment{**mylist}[4][]%
 {%
 \subsubsection*{%
@@ -83,7 +84,31 @@
 {%
   \end{itemize}%
 }
+\end{comment}
 
+\NewDocumentEnvironment{**mylist}{O{} m m m s}%
+{%
+\subsubsection*{%
+    \censor{#2}\tabb #3%
+    \if\relax\detokenize{#1}\relax
+      % no specialty
+    \else
+      {\;\;(#1)}%
+    \fi
+    \hfill \IfBooleanT{#5}{Contract\;\textperiodcentered\;}%
+    #4%
+}%
+\small
+  \begin{itemize}%
+    \setlength{\topsep}{.2pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\itemsep}{.6pt}%
+    \setlength{\parskip}{0pt}%
+    \setlength{\parsep}{0pt}%
+}%
+{%
+  \end{itemize}%
+}
 
 
 \newenvironment{*mylist}[2]{
@@ -112,7 +137,7 @@
 
 \pagestyle{empty}% remove page number
 \begin{multicols}{3}
-{\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf Philip \censor{Robinson}}}}\\
+{\noindent \columnbreak {\hspace{\bsp}\LARGE{\bf \censor{Philip Robinson}}}}\\
 \censor{Capitola, California, US}\\ \columnbreak UTC-8\\
 %\censor{Tiranë, Albania}\\ \columnbreak UTC+2\\
  \censor{probinso}+res@protonmail.com\\
@@ -179,7 +204,7 @@
 \def\tabb{\tab}  % so easy reversals can be performed
 
 \BSec{}%Work Experience
-\begin{**mylist}[Digital Twins]{\href{https://blueoasis.pt/}{Blue Oasis}}{Contract ML Engineer}{May 2025 - Oct 2025}
+\begin{**mylist}[Digital Twins]{\href{https://blueoasis.pt/}{Blue Oasis}}{ML Engineer}{May 2025 - Oct 2025}*
 \item Improved ML edge multi-label acoustic event detection pipeline, for tracking vessels \& marine life
 %\item Made reproducable \& hardened experiment flows for marine acoustics multi-label edge ML pipeline
 %\item Developed \& implemented custom features to identify vessel classes, with acoustics researchers 
@@ -220,7 +245,7 @@
   %\item \LU{Python, C, PyTorch, \href{https://retdec.com/}{RetDec}, \href{https://pypi.org/project/asts/}{asts.AST}, \href{https://pypi.org/project/gtirb/}{\censor{GTIRB}}, \href{https://dwarfstd.org/}{Dwarf}, Docker, celery, \href{https://github.com/CMUSTRUDEL/DIRTY}{\censor{DIRTY}}}
 \end{**mylist}
 
-\begin{**mylist}{\href{www.happywhale.com}{HappyWhale}}{Mobile \& Full Stack Engineer}{March 2019 - March 2020}
+\begin{**mylist}{\href{www.happywhale.com}{HappyWhale}}{Mobile \& Full Stack Engineer}{March 2019 - March 2020}*
 %\item Contributed as full stack developer on a small team, in both remote \& on-site environments
 \item Developed %\href{https://polarcollective.org/}{\censor{Polar Collective}},
   x-platform citizen science phone app
@@ -441,7 +466,6 @@
 \end{comment}
 
 \BSec{}
-\vspace{.5em}
 
 \begin{multicols}{2}
 
